@@ -12,6 +12,15 @@ body{
 section{
 padding: 30px;
 }
+.perehodgradientOne{
+    height: 1px;
+    width: 100%;
+   /* background: #59ffa3;*/
+    background: linear-gradient(90deg, #000, #00ff59,#00c6ff, #000);
+    animation: animate 5s linear infinite;
+}
+
+
 #scrollbox {
     width: 100%;
     height: 6px;
@@ -62,7 +71,10 @@ filter: blur(10px);
 }
 .about{
     background-color: black;
-    color: white;
+    color: #b6ffde;
+}
+.about .heading h2{
+    color: #b6ffde;   
 }
 .work{
     background-color: black;
