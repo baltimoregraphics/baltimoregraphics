@@ -15,9 +15,12 @@ padding: 30px;
 .perehodgradientOne{
     height: 1px;
     width: 100%;
-   /* background: #59ffa3;*/
-    background: linear-gradient(90deg, #000, #00ff59,#00c6ff, #000);
-    animation: animate 5s linear infinite;
+    background: grey;
+   /* background: linear-gradient(90deg, #000, #00ff59,#00c6ff, #000);
+    animation: animate 5s linear infinite;*/
+    /*background: url(img/line1.png);
+    background-position: center;
+    background-repeat: no-repeat;*/
 }
 
 
@@ -70,24 +73,46 @@ background: linear-gradient(to left,#008aff,#00ffe7);
 filter: blur(10px);
 }
 .about{
-    background-color: black;
+    background-color: #a2a2a2;
     color: #b6ffde;
 }
 .about .heading h2{
     color: #b6ffde;   
 }
-.work{
-    background-color: black;
-}
 .banner{
     position: relative;
     min-height: 100vh;
-    background: url(img/banner.jpg);
+   /* background: url(img/banner.jpg);
     background-size: cover;
-    background-position: right;
+    background-position: right;*/
+    background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+#myVideo{
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.textBx{
+    display: inline-block;
+    border: 3px;
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+.work{
+    background: url(img/dot.png);
+}
+.bnaner{
+width: 100%;
+
+}
+.banner{
+    position: relative;
 }
 .banner h2{
     font-size: 3em;

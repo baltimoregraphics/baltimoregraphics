@@ -98,13 +98,13 @@ canv.width = objServ.offsetWidth;
                 return {
                     p: {x: random(w), y: random(h)},
                     v: {x: random(.5) * (binRandom(.5)?1:-1), y: random(.5) * (binRandom(.5)?1:-1)},
-                    s: random(1)+2, 
+                    s: random(1)+0.5, 
                     o: random(1)+.3
                 }
             });
     function draw(){
         (h !== objServ.offsetHeight || w!==objServ.offsetWidth) && (w=c.width=objServ.offsetWidth,h=c.height=objServ.offsetHeight);
-        $.fillStyle="#222";
+        $.fillStyle="#0b0b0b";
         $.fillRect(0,0,w,h);
         arr.forEach(p=>{
             p.p.x+=p.v.x;
