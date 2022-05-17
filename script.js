@@ -114,7 +114,7 @@ canv.width = objServ.offsetWidth;
             $.beginPath();
             $.arc(p.p.x,p.p.y,p.s,0,pi2);
             $.closePath();
-            $.fillStyle = "rgba(255,255,255,"+p.o+")";
+            $.fillStyle = "rgba(255,125,1,"+p.o+")";
             $.fill();
         })
         requestAnimationFrame(draw)

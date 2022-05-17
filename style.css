@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:  sans-serif;
+    font-family: 'Comfortaa', cursive;
     scroll-behavior: smooth;
 }
 body{
@@ -15,15 +15,29 @@ padding: 30px;
 .perehodgradientOne{
     height: 1px;
     width: 100%;
-    background: grey;
-   /* background: linear-gradient(90deg, #000, #00ff59,#00c6ff, #000);
+    background: linear-gradient(90deg, #000, #ff5400, #000);
+   /* 
     animation: animate 5s linear infinite;*/
     /*background: url(img/line1.png);
     background-position: center;
     background-repeat: no-repeat;*/
 }
 
+#aboutToTo a{
+color: white;
+text-decoration: none;
+}
+#aboutToTo a:link {
+    color: white;
+}
 
+#aboutToTo a:visited {
+color: white;
+}
+#aboutToTo a:hover {
+color: #ff5900;
+cursor:  url(img/cursor300.png), pointer ;
+}
 #scrollbox {
     width: 100%;
     height: 6px;
@@ -73,11 +87,11 @@ background: linear-gradient(to left,#008aff,#00ffe7);
 filter: blur(10px);
 }
 .about{
-    background-color: #a2a2a2;
-    color: #b6ffde;
+    background-color: black;
+    color: white;
 }
 .about .heading h2{
-    color: #b6ffde;   
+    color: white;   
 }
 .banner{
     position: relative;
@@ -135,25 +149,23 @@ width: 100%;
         color: rgb(255, 255, 255);
     }
     75%{
-        color: rgb(187, 255, 0);
+        color: rgb(255, 123, 0);
     }
     85%{
-        color: rgb(41, 230, 255);  
+        color: rgb(255, 80, 10);  
     }
 }
 .banner a{
-    font-family: monospace;
     
 }
 .banner h3{
-    font-family: monospace;
     font-size: 1.5em;
     color: aliceblue;
     font-weight: 500;
 }
 .btn{
     position: relative;
-    background: #2196f3;
+    background: #ff5900;
     display: inline-block;
     color: aliceblue;
     margin-top: 20px;
@@ -166,7 +178,7 @@ width: 100%;
     cursor:  url(img/cursor300.png), pointer ;
 }
 .btn:hover{
-    background: #06cdff;
+    background: #ff9500;
     color: #000725;
 }
 header{
@@ -208,7 +220,6 @@ header ul li{
     list-style: none;
 }
 header ul li a{
-    font-family: monospace;
     position: relative;
     display: inline-block;
     margin: 0 15px;
@@ -217,7 +228,7 @@ header ul li a{
     cursor:  url(img/cursor300.png), pointer ;
 }
 header ul li a:hover{
-    color: rgb(0, 204, 255);
+    color: #ff7200;
     text-shadow: 0px 0px 2px #00ffe7;
 }
 header.sticky ul li a{
@@ -232,13 +243,11 @@ header.sticky ul li a{
 .heading p{
     font-size: 18px;
     padding: 10px;
-    font-family: monospace;
 }
 .heading h3{
     font-family: monospace;
 }
 .heading h2{
-    font-family: monospace;
     font-weight: 600;
     font-size: 30px;
 }
@@ -255,7 +264,7 @@ header.sticky ul li a{
     margin-bottom: 10px;
 }
 .contentBx h2{
-    font-family: monospace;
+    text-align: center;
     font-size: 20px;
     margin-bottom: 10px;
 }
@@ -271,7 +280,7 @@ header.sticky ul li a{
 }
 .w50 img:hover{
     transition: 2s;
-    animation: tyty 2s linear infinite;
+    /*animation: tyty 2s linear infinite;*/
 }
 @keyframes tyty{
     0%{
@@ -311,16 +320,13 @@ canvas{
     z-index: 4;
 }
 .heading.white{
-     font-family: monospace;
 color: #fff;
 }
 .heading.white h2{
 color: #fff;
-font-family: monospace;
 }
 .heading.white p{
 color: #fff;
-font-family: monospace;
 }
 .services .content{
     display: flex;
@@ -330,7 +336,7 @@ font-family: monospace;
 }
 .services .content .servicesBx{
     padding: 40px 20px;
-    background: rgba(0, 184, 184, 0.062);
+    background: rgba(150, 100, 1, 0.062);
     color: #fff;
     max-width: 340px;
     margin: 20px;
@@ -338,7 +344,7 @@ font-family: monospace;
     transition: 0.5s;
 }
 .services .content .servicesBx:hover{
-    background: #2195f3d8;
+    background: rgba(255, 88, 0, 0.9);
 }
 .services .content .servicesBx img{
     max-width: 80px;
@@ -347,11 +353,11 @@ font-family: monospace;
 .services .content .servicesBx h2{
     font-size: 20px;
     font-weight: 600;
-    font-family: monospace;
+   
 }
 .services .content .servicesBx p{
+   font-size: 12px;
    
-    font-family: monospace;
 }
 .work .content{
     display: flex;
@@ -364,6 +370,7 @@ font-family: monospace;
 }
 .work .content .workBx img{
     max-width: 100%;
+    border: 1px solid rgba(255, 88, 0, 0.7);
 }
 .fuLLLILLLc{
     width: 100%;
@@ -379,9 +386,9 @@ font-family: monospace;
 }
 .fullll{
     width: 100%;
-    height: 2px;
+    height: 1px;
     position: relative;
-    background:  #000000cc;
+    background: linear-gradient(90deg, #000, #ff5400, #000);
 }
 .fuLLLILLLc .container{
     animation: huer 25s linear infinite;
@@ -397,13 +404,13 @@ font-family: monospace;
 }
 .butttf{
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background: linear-gradient( #00aeff , #00ffd5);
     border-radius: 50%;
     z-index: 4;
     left: 10%;
-    top: -20px;
+    top: -15px;
     border: 2px solid black;
     animation: ret  1s linear infinite;
     transition: 0.2s;
@@ -482,7 +489,7 @@ font-family: monospace;
     }
 }
 .textimonial{
-    background-color: #07090e;
+    background: url(img/dot.png);
     
 }
 .textimonial .content{
@@ -494,7 +501,7 @@ font-family: monospace;
     max-width: 49%;
     padding: 60px 40px;
     
-    background: #2196f3;
+    background: rgba(255, 88, 0, 0.8);
 }
 .textimonial .content .textimonialBx p{
     color: #fff;
@@ -575,7 +582,6 @@ font-family: monospace;
     padding: 5px 0;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 .contactInfoBx .box .icon{
     min-width: 40px;
@@ -595,28 +601,24 @@ font-family: monospace;
     /*flex-direction: column;*/
 }
 .contactInfoBx .box .text p{
-     font-family: monospace;
+     font-size: 12px;
     margin: auto;
 }
 .contactInfoBx .box .text h3{
-     font-family: monospace;
     font-weight:500;
-    color: #2196f3;
+    color: #ff5900;
     margin-bottom: 0;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 .copyright p{
-     font-family: monospace;
     background: #000;
     color: #fff;
     text-align: center;
     padding: 6px;
+     font-size: 10px;
 }
-.copyright p{
-    font-size: 12px;
-}
+
 .slider{
     position: fixed;
     width: 100%;
@@ -756,7 +758,7 @@ font-family: monospace;
     opacity: 0;
 }
 .btn.onc{
-    border: 1px solid rgb(0, 174, 255);
+   
 }
 
 /* responsive */
@@ -853,7 +855,7 @@ font-family: monospace;
         max-width: 99%;
         margin-bottom: 10px;
         padding: 60px 40px;
-        background: #2196f3;
+        
     }
     .windslider{
         width: 600px;
@@ -950,7 +952,7 @@ font-family: monospace;
     width: 0.4rem;
     height: 0.4rem;
     border-radius: 50%;
-    background-color: #00c3ff;
+    background-color: #ff5500;
     animation: dm 0.8s ease linear;
     }
     #loader:nth-child(2){
@@ -1077,16 +1079,14 @@ font-family: monospace;
         }
         .re a{
             color: #646464;
-        
-            height: 8px;
-            padding:4px;
+            height: 2px;
+            padding:2px;
             text-decoration: none;
             text-transform: uppercase;
             display: block;
-            font-size: 8px;
+            font-size: 2px;
         }
         .re{
-            padding: 4px;
             background-color: black;
             display: flex;
             justify-content: space-between;
