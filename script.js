@@ -311,3 +311,11 @@ let tmr;
     onett.oninput = zizibox2;
     */
 /*-------*/
+window.onload =()=>{/*
+    document.querySelector('wrapper').style.transform = 'translateY(-10vh)';*/
+    document.querySelector('wrapper').style.opacity = 0;
+    setTimeout(()=>{
+        document.querySelector('wrapper').style.display = 'none';},1500)
+    
+
+}
