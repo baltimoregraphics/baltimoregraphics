@@ -57,7 +57,7 @@ cursor:  url(img/cursor300.png), pointer ;
     top: 0;
     left: 0;
     z-index: 1003;
-    background: linear-gradient(to left,#008aff,#00ffe7);
+    background: linear-gradient(to left,#0089ff,rgb(122 0 255));
     animation: animate 5s linear infinite;
 }
 
